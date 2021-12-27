@@ -497,7 +497,7 @@ if __name__ == '__main__':
     parser.add_argument('--accumulate', type=int, default=2, help='batches to accumulate before optimizing')
     parser.add_argument('--cfg', type=str, default='cfg/yolov3-spp.cfg', help='cfg file path')
     parser.add_argument('--t_cfg', type=str, default='', help='teacher model cfg file path for knowledge distillation')
-    parser.add_argument('--data', type=str, default='data/coco.data', help='*.data file path')
+    parser.add_argument('--data', type=str, default='data/custom.data', help='*.data file path')
     parser.add_argument('--multi-scale', action='store_true', help='adjust (67% - 150%) img_size every 10 batches')
     parser.add_argument('--img_size', type=int, default=416, help='inference size (pixels)')
     parser.add_argument('--rect', action='store_true', help='rectangular training')
